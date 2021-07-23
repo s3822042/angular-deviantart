@@ -99,7 +99,6 @@
             "karmaConfig": "karma.conf.js",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/assets/favicon.ico",
               "src/assets",
               "src/manifest.webmanifest"
             ],
@@ -113,5 +112,5 @@
       }
     }
   },
-  "defaultProject": "angular-gallery"
+  "defaultProject": "angular-devianart"
 }
