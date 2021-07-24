@@ -1,3 +1,27 @@
+@font-face{
+  font-family: DevioussansBold;
+  src: url(assets/fonts/devioussans-02-bold.woff2)
+}
+
+@font-face{
+  font-family: DevioussansExtraBold;
+  src: url(assets/fonts/devioussans-02-extrabold.woff2)
+}
+
+@font-face{
+  font-family: DevioussansLight;
+  src: url(assets/fonts/devioussans-02-light.woff2)
+}
+
+@font-face{
+  font-family: DevioussansMedium;
+  src: url(assets/fonts/devioussans-02-medium.woff2)
+}
+
+@font-face{
+  font-family: DevioussansRegular;
+  src: url(assets/fonts/devioussans-02-regular.woff2)
+}
 * {
   box-sizing: border-box;
 }
