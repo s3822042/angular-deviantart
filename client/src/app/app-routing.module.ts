@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
-import { SignupComponent } from './components/signup/signup.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { SignUpComponent } from './components/signup/signup.component';
 
 const routes: Routes = [
   {
@@ -15,12 +16,17 @@ const routes: Routes = [
   },
   {
     path: "signup",
-    component: SignupComponent
+    component: SignUpComponent
+  },
+  {
+    path: "**",
+    pathMatch   : 'full',
+    component: PageNotFoundComponent
   },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { enableTracing: true })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
