@@ -142,7 +142,7 @@
   }
 
   &--form-title {
-    font-family: "DevioussansBold";
+    font-family: "DevioussansExtraBold";
     font-weight: 400;
     letter-spacing: .3px;
     color: #0E0D20;
@@ -162,7 +162,6 @@
     color: #0E0D20;
 
     a {
-      text-decoration: none;
       color: #0289FF;
     }
   }
@@ -175,23 +174,32 @@
     width: 335px;
   }
 
-  &--form-username {
+  &--form-username,
+  &--form-email,
+  &--form-confirm-email,
+  &--form-password {
     width: 100%;
     z-index: 1;
-    padding: 15px 0 20px 0;
+    padding: 0px 0 20px 0;
     position: relative;
-
   }
 
-  &--form-username-contain {
+  &--form-username-contain,
+  &--form-email-contain,
+  &--form-confirm-email-contain,
+  &--form-password-contain,
+    {
     display: flex;
   }
 
-  &--username-label {
+  &--username-label,
+  &--email-label,
+  &--confirm-email-label,
+  &--password-label {
     top: 0;
     font-family: "DevioussansRegular";
     font-weight: 400;
-    font-size: 12px;
+    font-size: 18px;
     line-height: 20px;
     letter-spacing: .3px;
     color: #5D5D6C;
@@ -203,38 +211,147 @@
     cursor: text;
   }
 
-  &--username-field {
+  &--username-field,
+  &--email-field,
+  &--confirm-email-field,
+  &--password-field {
     position: relative;
     width: 100%;
     display: flex;
     align-items: center;
   }
 
-  &--username-input {
+
+  &--username-input,
+  &--email-input,
+  &--confirm-email-input,
+  &--password-input {
+    font-family: "DevioussansRegular";
     font-weight: 400;
     font-size: 18px;
     line-height: 26px;
     letter-spacing: .3px;
     color: #0E0D20;
-    background: transparent;
-    background-position-x: 0%;
-    background-position-y: 0%;
-    background-repeat: repeat;
-    background-attachment: scroll;
-    background-image: none;
-    background-size: auto;
     width: 100%;
     border: 0;
     padding: 3px 7px 7px 7px;
     outline: none;
+    border-bottom: 1px solid #d3d3d3;
+    box-shadow: none;
   }
 
-  &--username-divider {
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: #5D5D6C;
+
+
+  &--form-birthdate {
+    display: flex;
+    margin-top: 12px;
+
+    &-month {
+      position: relative;
+      padding: 15px 0 20px 0;
+
+      &-contain {
+        display: flex;
+      }
+
+      &-label {
+        position: absolute;
+        top: 0;
+        left: 7px;
+        font-family: "DevioussansRegular";
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: .3px;
+        color: #5d5d5d;
+        cursor: text;
+        transition: all .25s cubic-bezier(.4, 0, .2, 1);
+        z-index: 1;
+        white-space: nowrap;
+      }
+
+      &-field {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &-day {
+      margin-left: 20px;
+      position: relative;
+      padding: 15px 0 20px 0;
+    }
+
+    &-year {
+      margin-left: 20px;
+      position: relative;
+      padding: 15px 0 20px 0;
+    }
+  }
+
+  &--submit-button {
+    font-family: "DevioussansExtraBold";
+    display: block;
+    width: 120px;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 1.22;
+    letter-spacing: 1.3px;
+    height: 54px;
+    background: linear-gradient(114deg, #4cddbd, #06f286);
+    transition: background .1s linear;
+    color: #06070D;
+    border-radius: 0;
+    padding: 0 30px 0 30px;
+    margin: 17px 0 0 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    &:before {
+      position: absolute;
+      content: "";
+      display: block;
+      pointer-events: none;
+      transition: all .1s linear;
+      transform-origin: 0 0;
+      background-image: radial-gradient(ellipse at 110% 130%, #fff, hsla(0, 0%, 100%, 0) 80%);
+      background-position-y: 0;
+      background-repeat: no-repeat;
+      top: -50px;
+      left: 40%;
+      margin-left: -80px;
+      width: 100px;
+      height: 100px;
+      transform: rotate(-68deg) translateX(-50%);
+      opacity: .8;
+      z-index: -1;
+    }
+
+    &:hover {
+      background: linear-gradient(115deg, #4cddbd, #06f286);
+      background-position: 30% 0;
+    }
+  }
+
+
+  &--agree {
+    font-family: "DevioussansRegular";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: .3px;
+    color: #90909c;
+    width: 100%;
+
+    a {
+      color: #0289FF;
+    }
   }
 }
