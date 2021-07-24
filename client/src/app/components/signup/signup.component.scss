@@ -1,5 +1,8 @@
 .sign__up {
   position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 1024px;
   width: 100%;
   height: 100%;
   background-image: url("/../../assets/images/signup.png");
@@ -11,6 +14,8 @@
   align-items: center;
 
   &--logo {
+    top: 66px;
+    left: 76px;
     position: absolute;
     display: block;
 
@@ -23,6 +28,7 @@
         height: 36px;
       }
     }
+
     &-text {
       color: #FFF;
       display: inline-block;
@@ -32,5 +38,203 @@
         height: 36px;
       }
     }
+  }
+
+  &--form-container {
+    width: 856px;
+    height: 690px;
+    background: #fff;
+    display: flex;
+    box-shadow: 0 40pt 50pt 0 rgba(0, 0, 0, .35);
+  }
+
+  &--left-img {
+    background-image: url("/../../assets/images/signup_img.png");
+    position: relative;
+    width: 416px;
+    height: 100%;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+    overflow: hidden;
+  }
+
+  &--content {
+    background: rgba(14, 13, 32, .4);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 144px 56px 40px 56px;
+  }
+
+  &--title {
+    font-family: "DevioussansBold";
+    width: 221px;
+    margin: 0 0 24px;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 1.22;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 42px;
+    color: #FFF;
+  }
+
+  &--description {
+    font-family: "DevioussansRegular";
+    font-weight: 400;
+    color: #FFF;
+    font-size: 14px;
+    line-height: 1.22;
+    letter-spacing: .3px;
+    margin-right: 40px;
+  }
+
+  &--form-container-content {
+    flex-grow: 1;
+    position: relative;
+    width: 440px;
+  }
+
+  &--form-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border-radius: 44px;
+    margin: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+    font: inherit;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &-svg {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      color: #5D5D6C;
+
+      svg {
+        color: #0e0e0e;
+        width: 24px;
+        height: 24px;
+        fill: currentColor;
+      }
+    }
+  }
+
+
+  &--form-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 48px;
+  }
+
+  &--form-title {
+    font-family: "DevioussansBold";
+    font-weight: 400;
+    letter-spacing: .3px;
+    color: #0E0D20;
+    font-size: 25px;
+    line-height: 32px;
+    margin: 0 0 3px;
+  }
+
+  &--form-subtitle {
+    font-family: "DevioussansRegular";
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.22;
+    line-height: 17px;
+    font-weight: 400;
+    letter-spacing: .3px;
+    color: #0E0D20;
+
+    a {
+      text-decoration: none;
+      color: #0289FF;
+    }
+  }
+
+  &--form-outer {
+    margin: 32px 0 24px;
+  }
+
+  &--form-inner {
+    width: 335px;
+  }
+
+  &--form-username {
+    width: 100%;
+    z-index: 1;
+    padding: 15px 0 20px 0;
+    position: relative;
+
+  }
+
+  &--form-username-contain {
+    display: flex;
+  }
+
+  &--username-label {
+    top: 0;
+    font-family: "DevioussansRegular";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: .3px;
+    color: #5D5D6C;
+    position: absolute;
+    left: 7px;
+    transition: all .25s cubic-bezier(.4, 0, .2, 1);
+    z-index: 1;
+    white-space: nowrap;
+    cursor: text;
+  }
+
+  &--username-field {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &--username-input {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: .3px;
+    color: #0E0D20;
+    background: transparent;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-image: none;
+    background-size: auto;
+    width: 100%;
+    border: 0;
+    padding: 3px 7px 7px 7px;
+    outline: none;
+  }
+
+  &--username-divider {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #5D5D6C;
   }
 }

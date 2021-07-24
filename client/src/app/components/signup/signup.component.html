@@ -1,6 +1,6 @@
 <div class="sign__up">
-  <a href="/" title="DeviantArt" aria-label="DeviantArt">
-
+  <!-- Logo -->
+  <a routerLink="/" title="DeviantArt" aria-label="DeviantArt">
     <div class="sign__up--logo">
       <span class="sign__up--logo-img"><svg fill="#00E597" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="0" height="0" viewBox="0 0 100 167"
@@ -19,4 +19,60 @@
         </svg></span>
     </div>
   </a>
+  <!-- Sign up form -->
+  <div class="sign__up--form-container">
+    <div class="sign__up--left-img">
+      <div class="sign__up--content">
+        <div>
+          <h1 class="sign__up--title">Join The Largest Art Community In The World</h1>
+          <p class="sign__up--description">Get free access to 370 million pieces of art. Showcase, promote, sell & share
+            your work with over 61 million members.</p>
+        </div>
+      </div>
+    </div>
+    <div class="sign__up--form-container-content">
+      <!-- Close button -->
+      <button class="sign__up--form-close">
+        <span class="sign__up--form-close-svg"><svg width="0" height="0" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <g fill-rule="evenodd">
+              <path d="M4 6.182L6.182 4 20 17.818 17.818 20z"></path>
+              <path d="M20 6.182L6.182 20 4 17.818 17.818 4z"></path>
+            </g>
+          </svg></span>
+      </button>
+      <div class="sign__up--form-content">
+        <h2 class="sign__up--form-title">Join DeviantArt</h2>
+        <p class="sign__up--form-subtitle">Already a deviant ?
+          <a routerLink="/login">Log in</a>
+        </p>
+        <div class="sign__up--form-outer">
+          <form class="sign__up--form-inner" action="" method="post">
+            <div>
+              <!-- Username -->
+              <div class="sign__up--form-username">
+                <div class="sign__up--form-username-contain">
+                  <label class="sign__up--username-label" for="username">Pick a username</label>
+                  <div class="sign__up--username-field">
+                    <input class="sign__up--username-input" id="username" name="username" autocomplete="off"
+                      autocapitalize="none" type="text" spellcheck="false" step="1" />
+                    <div class="sign__up--username-divider">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Email -->
+              <div>
+                <!-- Email -->
+                <div></div>
+                <!-- Confirm Email -->
+                <div></div>
+              </div>
+              <!-- Password -->
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
