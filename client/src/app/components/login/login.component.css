@@ -1,0 +1,312 @@
+.log__in {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 1024px;
+  width: 100%;
+  height: 100%;
+  background-image: url("/../../assets/images/signup.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.log__in--logo {
+  top: 66px;
+  left: 76px;
+  position: absolute;
+  display: block;
+}
+.log__in--logo-img {
+  margin-right: 2px;
+  display: inline-block;
+}
+.log__in--logo-img svg {
+  width: 22px;
+  height: 36px;
+}
+.log__in--logo-text {
+  color: #FFF;
+  display: inline-block;
+}
+.log__in--logo-text svg {
+  width: 111px;
+  height: 36px;
+}
+.log__in--form-container {
+  width: 856px;
+  height: 690px;
+  background: #fff;
+  display: flex;
+  box-shadow: 0 40pt 50pt 0 rgba(0, 0, 0, 0.35);
+}
+.log__in--left-img {
+  background-image: url("/../../assets/images/signup_img.png");
+  position: relative;
+  width: 416px;
+  height: 100%;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  overflow: hidden;
+}
+.log__in--content {
+  background: rgba(14, 13, 32, 0.4);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 144px 56px 40px 56px;
+}
+.log__in--title {
+  font-family: "DevioussansBold", serif;
+  width: 221px;
+  margin: 0 0 24px;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 42px;
+  color: #FFF;
+}
+.log__in--description {
+  font-family: "DevioussansRegular", serif;
+  font-weight: 400;
+  color: #FFF;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+  margin-right: 40px;
+}
+.log__in--form-container-content {
+  flex-grow: 1;
+  position: relative;
+  width: 440px;
+}
+.log__in--form-close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  border-radius: 44px;
+  margin: 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+  font: inherit;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.log__in--form-close-svg {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  color: #5D5D6C;
+}
+.log__in--form-close-svg svg {
+  color: #0e0e0e;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+.log__in--form-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 40px 48px;
+}
+.log__in--form-title {
+  font-family: "DevioussansExtraBold", serif;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  color: #0E0D20;
+  font-size: 25px;
+  line-height: 32px;
+  margin: 0 0 3px;
+}
+.log__in--form-subtitle {
+  font-family: "DevioussansRegular", serif;
+  margin: 0;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  color: #0E0D20;
+}
+.log__in--form-subtitle a {
+  color: #0289FF;
+}
+.log__in--form-outer {
+  margin: 32px 0 24px;
+}
+.log__in--form-inner {
+  width: 335px;
+}
+.log__in--form-username, .log__in--form-password {
+  width: 100%;
+  z-index: 1;
+  margin-top: -5px;
+  padding: 15px 0 20px 0;
+  position: relative;
+}
+.log__in--form-username-contain, .log__in--form-password-contain {
+  display: flex;
+}
+.log__in--username-label, .log__in--password-label {
+  top: 0;
+  font-family: "DevioussansRegular", serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  color: #5D5D6C;
+  position: absolute;
+  left: 7px;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+  white-space: nowrap;
+  cursor: text;
+}
+.log__in--username-field, .log__in--password-field {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.log__in--username-input, .log__in--password-input {
+  font-family: "DevioussansRegular", serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.3px;
+  color: #0E0D20;
+  width: 100%;
+  border: 0;
+  padding: 3px 7px 7px 7px;
+  outline: none;
+  border-bottom: 1px solid #d3d3d3;
+  box-shadow: none;
+}
+.log__in--checkbox {
+  display: inline-flex;
+  align-items: center;
+  margin: 12px 0 10px;
+}
+.log__in--checkbox-field {
+  background: #00D38F;
+  border-color: #00D38F;
+  cursor: pointer;
+  user-select: none;
+  display: inline-flex;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  box-sizing: border-box;
+  align-content: center;
+  justify-content: center;
+  border-width: 2px;
+  border-style: solid;
+  flex-shrink: 0;
+}
+.log__in--checkbox-tick {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 65%;
+  margin-left: 1px;
+  cursor: pointer;
+}
+.log__in--checkbox-tick svg {
+  width: 100%;
+  height: 100%;
+  fill: #FFF;
+  overflow: hidden;
+}
+.log__in--checkbox-description {
+  font-family: "DevioussansRegular", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  margin-left: 8px;
+}
+.log__in--submit-button {
+  font-family: "DevioussansExtraBold", serif;
+  display: block;
+  width: 120px;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1.22;
+  letter-spacing: 1.3px;
+  height: 54px;
+  background: linear-gradient(114deg, #4cddbd, #06f286);
+  transition: background 0.1s linear;
+  color: #06070D;
+  border-radius: 0;
+  padding: 0 30px 0 30px;
+  margin: 17px 0 0 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.log__in--submit-button:before {
+  position: absolute;
+  content: "";
+  display: block;
+  pointer-events: none;
+  transition: all 0.1s linear;
+  transform-origin: 0 0;
+  background-image: radial-gradient(ellipse at 110% 130%, #fff, rgba(255, 255, 255, 0) 80%);
+  background-position-y: 0;
+  background-repeat: no-repeat;
+  top: -50px;
+  left: 40%;
+  margin-left: -80px;
+  width: 100px;
+  height: 100px;
+  transform: rotate(-68deg) translateX(-50%);
+  opacity: 0.8;
+  z-index: -1;
+}
+.log__in--submit-button:hover {
+  background: linear-gradient(115deg, #4cddbd, #06f286) 30% 0;
+}
+.log__in--forgot-password {
+  font-family: "DevioussansRegular", serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  line-height: 24px;
+  margin-top: 64px;
+  display: inline-block;
+}
+.log__in--forgot-password a {
+  color: #0289FF;
+}
+.log__in--agree {
+  font-family: "DevioussansRegular", serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  color: #90909c;
+  width: 100%;
+}
+.log__in--agree a {
+  color: #0289FF;
+}
+
+/*# sourceMappingURL=login.component.css.map */
